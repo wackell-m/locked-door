@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.door {
+    width: 200px;
+    height: 300px;
+    background-color: green;
+    margin: 20px auto;
+    position: relative;
+    border: 2px solid #00ff00;
+}
+
+.keyfob-area {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid #00ff00;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 25px);
+}
+
+.code-input {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #00ff00;
+    background-color: black;
+    color: #00ff00;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00ff00;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+.reveal {
+    font-size: 48px;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+.door.open {
+    background-color: black;
+    border-color: #00ff00;
+}
+
+.door.error {
+    background-color: red;
+    border-color: red;
+}
+
+.code-input.error {
+    border-color: red;
+}
