@@ -8,17 +8,20 @@
 </head>
 <body>
     <div class="container">
-       <div class="door" id="door">
-    <div class="keyfob-area"></div>
-    <div class="door-panel"></div>
-    <div class="door-panel"></div>
-    <div class="door-handle"></div>
-</div>
-
-        <input type="text" id="codeInput" class="code-input" placeholder="Enter Code">
-        <button onclick="checkCode()">Unlock</button>
-        <div class="reveal" id="reveal">68</div>
+    <div class="wall">
+        <div class="door decorative-door"></div>
+        <div class="door" id="door">
+            <div class="keyfob-area"></div>
+            <div class="door-panel"></div>
+            <div class="door-panel"></div>
+            <div class="door-handle"></div>
+        </div>
+        <div class="door decorative-door"></div>
     </div>
+    <input type="text" id="codeInput" class="code-input" placeholder="Enter Code">
+    <button onclick="checkCode()">Unlock</button>
+    <div class="reveal" id="reveal">68</div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
