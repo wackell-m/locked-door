@@ -1,3 +1,4 @@
+/* Body and general styling */
 body {
     font-family: Arial, sans-serif;
     background-color: black;
@@ -13,7 +14,7 @@ body {
     text-align: center;
 }
 
-/* Wall Background */
+/* Wall and doors styling */
 .wall {
     display: flex;
     justify-content: center;
@@ -27,7 +28,6 @@ body {
     box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
 }
 
-/* Updated Door Styling */
 .door {
     width: 150px;
     height: 250px;
@@ -74,7 +74,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 255, 0, 0.5);
 }
 
-/* Decorative Doors */
+/* Decorative doors */
 .decorative-door {
     pointer-events: none; /* Makes these doors non-interactive */
     opacity: 0.8; /* Slightly faded to indicate they're non-functional */
@@ -85,7 +85,7 @@ body {
     display: none; /* Remove functional elements for decorative doors */
 }
 
-/* Inputs */
+/* Inputs and buttons */
 .code-input {
     margin-top: 20px;
     padding: 10px;
@@ -109,23 +109,15 @@ button:hover {
     background-color: #00cc00;
 }
 
+/* Reveal and success message */
 .reveal {
     font-size: 48px;
     margin-top: 20px;
     visibility: hidden;
 }
 
-
-.door.open {
-    background-color: black;
-    border-color: #00ff00;
-}
-
-.door.error {
-    background-color: red;
-    border-color: red;
-}
-
-.code-input.error {
-    border-color: red;
+.success-message {
+    font-size: 18px;
+    color: #00ffff;
+    margin-top: 10px;
 }
